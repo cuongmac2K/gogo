@@ -1,0 +1,14 @@
+package config
+
+var ErrorCode = map[string]int{
+	"ERROR_ITEM_NOT_FOUND":           10004,
+	"ERROR_INVALID_PARAMETER":        10000,
+	"ERROR_INTERNAL_SERVER":          10005,
+	"ERROR_NOT_PERMISSION":           10006,
+	"ERROR_AUTHENTICATE_FAIL":        10003,
+	"ERROR_MISSING_PARAMS":           4000,
+	"ERROR_CHANNEL_NOT_FOUND":        4001,
+	"ERROR_SETTING_NOT_FOUND":        4002,
+	"ERROR_ES":                       40002,
+	"ERROR_CHANNEL_ASSIGN_NOT_FOUND": 40003,
+}

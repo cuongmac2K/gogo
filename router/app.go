@@ -1,6 +1,7 @@
 package router
 
 import (
+	"first_demo/model/user"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 )
@@ -16,5 +17,5 @@ func ResigerAPP(app *fiber.App) {
 func User(app *fiber.App) {
 	api := app.Group("/v1.0")
 	group := api.Group("/user")
-	group.Post("/webhook_log", facebook.WebhookLog)
+	group.Post("/create_user", user.CreateUser)
 }
