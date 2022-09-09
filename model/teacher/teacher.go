@@ -1,0 +1,5 @@
+package teacher
+
+func GetOne() {
+
+}
